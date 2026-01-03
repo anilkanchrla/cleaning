@@ -1,0 +1,237 @@
+/* Container layout */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+
+  padding: 50px 80px;
+  margin-top: 30px;
+}
+#main{
+  padding: 20px;
+  background-color: rgb(247, 250, 249);
+}
+
+#banner{
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* Image styling */
+.about img {
+  width: 50%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 3px 40px 12px rgba(19, 18, 18, 0.2);
+  border: 3px solid #cce9ff;
+}
+
+/* Paragraph styling */
+.about p {
+  max-width: 50%;
+  font-size: 20px;
+  line-height: 1.8;
+  color: #333;
+  font-family: "Segoe UI", sans-serif;
+  background: rgba(240, 248, 255, 0.4);
+  padding: 20px 28px;
+  border-radius: 10px;
+  box-shadow: 0 30px 10px rgba(0,0,0,0.06);
+}
+
+/* Main heading "Our Story" */
+.about-title {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 100px; /* ensure below navbar */
+  color: #0a0a0a;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+/* Responsive layout (mobile view) */
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .about img {
+    width: 90%;
+  }
+
+  .about p {
+    font-size: 18px;
+    max-width: 95%;
+  }
+
+  .about-title {
+    font-size: 30px;
+  }
+}
+
+#purpose{
+  display: flex;
+  flex-direction: column;
+}
+#purpose p{
+  font-size: 20px;
+  width: 50%;
+  padding: 15px;
+  line-height: 1.3;
+  color: #333;
+  font-family: "Segoe UI", sans-serif;
+  background: rgba(240, 248, 255, 0.4);
+  padding: 20px 28px;
+  border-radius: 10px;
+  box-shadow: 0 30px 10px rgba(0,0,0,0.06);
+  margin-bottom: 10px;
+
+  /* max-width: 50%;
+  font-size: 40px;
+  line-height: 1.8;
+  color: #333;
+  font-family: "Segoe UI", sans-serif;
+  background: rgba(240, 248, 255, 0.4);
+  padding: 20px 28px;
+  border-radius: 10px;
+  box-shadow: 0 30px 10px rgba(0,0,0,0.06); */
+}
+#purpose h2{
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+
+}
+#purpose img{
+  border-radius: 20px;
+}
+
+#h2{
+  justify-content: center;
+  font-weight: bold;
+}
+.brands{
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#h2{
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+#brand{
+  margin: 100px auto;
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+}
+.brands{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  animation: spin 10s infinite linear;
+}
+#brand::-webkit-scrollbar{
+  display: none;
+}
+.card{
+  flex: 0 0 5em;
+  height: 5em;
+  padding: 1em;
+  background-color: aliceblue;
+  font-size: 2rem;
+  border-radius: .2em;
+  text-align: center;
+  align-items: center;
+
+}
+@keyframes spin{
+  from {translate: 0;}
+  to {translate: -100%;}
+}
+
+#contact{
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+}
+#addres{
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  margin-top: 30px;
+}
+#addres strong{
+  font-size: 40px;
+}
+#ending{
+  display: flex;
+  flex-direction: row;
+  background-color: #080808;
+  justify-content: space-around;
+  color: #cce9ff;
+}
+
+
+
+/* Default styles (Desktop / Laptop) */
+#ending {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #000;
+  color: white;
+}
+
+#contact, #addres {
+  width: 45%;
+}
+
+#addres p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* 📱 Mobile Media Query */
+@media screen and (max-width: 768px) {
+  #ending {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  #contact, #addres {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  #contact h2 {
+    font-size: 28px !important;
+  }
+
+  #contact a {
+    font-size: 20px !important;
+    word-break: break-word;
+  }
+
+  #addres strong {
+    font-size: 22px;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  #addres p {
+    font-size: 16px;
+  }
+
+  #addres h3 {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+}
