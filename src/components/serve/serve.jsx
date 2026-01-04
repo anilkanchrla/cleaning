@@ -2,7 +2,7 @@ import React from "react";
 import hospital from "../../imgs/Hospitals-1.webp"
 import school from "../../imgs/Schools-2.webp"
 import restaurant from "../../imgs/Restaurants-1.webp"
-import familly from "../../imgs/families-1.webp"
+import familly from "../../imgs/Familie.webp"
 import kitchan from "../../imgs/Kitchens-1.webp"
 import washroom from "../../imgs/Bathrooms-1.webp"
 import dailyneeds from "../../imgs/dailyneeds.webp"
